@@ -13,13 +13,16 @@ img {
 body {
   color: #444;
   font-size: 1.6rem;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Gentium Book Plus', sans-serif;
 }
 p {
   margin-bottom: .67em;
 }
 nav, footer {
-  background-color: #444;
+  background-color: #ca1515;
+}
+.dropcap {
+  font-size: 60px;
 }
 footer {
   text-align: center;
@@ -30,6 +33,9 @@ footer {
 nav ul {
   list-style: none;
   padding: 1em;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 nav a:link, nav a:visited {
   color: #D0D0D0;
@@ -47,6 +53,8 @@ header {
   width: 510px;
   margin-top: 2em;
   margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
 header img {
   width: 100%;
@@ -55,33 +63,45 @@ header img {
 header h1 {
   margin: 0 auto;
   padding: 0 auto;
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 .small {
   margin-top: 1em;
+  font-size: smaller;
 }
 /*-- Article Styles--*/
 article {
   width: 768px;
   font-size: 18px;
   line-height: 1.3;
+  margin-left: auto;
+  margin-right: auto;
 }
 article figure {
   width: 39%;
   margin: 0 0 1.25em 1.25em;
+  float: right;
 }
 article figcaption {
-  font-size: inherit;
+  font-size: smaller;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .pagination {
   margin-top: 2em;
   margin-bottom: 2em;
   width: 96%;
+  display: flex;
+  justify-content: space-evenly;
 }
 a.button {
   border: 2px solid #888;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
+  background-color: #222;
+  color: #fffdfd;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -90,7 +110,7 @@ a.button {
 a.button:hover, a.button:active {
   border: 1px solid #444;
   text-decoration: none;
-  color: #222;
+  color: #ffffff;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
